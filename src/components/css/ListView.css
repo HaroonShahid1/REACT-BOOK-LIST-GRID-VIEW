@@ -1,0 +1,68 @@
+.listViewContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  
+  .listViewTable {
+    width: 90%;
+    height: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease;
+
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .listViewTable th, .listViewTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .listViewTable th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .listViewTable td {
+    font-size: 19px;
+  }
+
+
+  .listViewTable tbody td:nth-child(1) {
+    width: 30%;
+  }
+  
+  .listViewTable tbody td:nth-child(2) {
+    width: 20%;
+  }
+  
+  .listViewTable tbody td:nth-child(3) {
+    width: 40%;
+  }
+  
+  .listViewTable tbody td:nth-child(4) {
+    width: 10%;
+  }
+  
+  .listViewTable tbody td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  

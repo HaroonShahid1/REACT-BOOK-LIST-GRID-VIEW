@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.search-input {
+  width: 500px;
+  padding: 16px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+  margin-left: 2%;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #889c03;
+}
+
+@keyframes example {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button-toggle {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-toggle:hover {
+  background-color: #45a049;
+}
+
+.button-toggle:focus {
+  outline: none;
+}
+
+.h1{
+  text-align: center;
+  top: 2%;
+  font-size: 45px;
+  color: rgb(11, 127, 18);
+}

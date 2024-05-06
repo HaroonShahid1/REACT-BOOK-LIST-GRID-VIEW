@@ -1,0 +1,64 @@
+.gridViewContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.gridView {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.gridViewItem {
+    border: 1px solid #0c8f00;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(206, 231, 127, 0.475);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.gridViewItem:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 28px rgb(221, 244, 164);
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0683cc;
+    text-align: center;
+}
+
+.genre, .date, .description, .status {
+    font-size: 16px;
+    padding: 2px;
+}
+
+.gridViewItem p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.gridViewItem p:first-child {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 4%;
+}
